@@ -5,4 +5,4 @@ RUN chmod +x note.exe
 ENV DirNumber 0
 ENV PORT 8443
 EXPOSE $PORT
-ENTRYPOINT [ "note.exe", "-P", "$DirNumber" ]
+ENTRYPOINT excc note.exe -P $DirNumber
