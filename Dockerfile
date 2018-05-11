@@ -5,4 +5,4 @@ RUN chmod +x /Note/
 ENV DirNumber 0
 ENV PORT 8443
 EXPOSE $PORT
-ENTRYPOINT  /abc.sh
+ENTRYPOINT /Note/abc.sh
