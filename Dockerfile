@@ -1,8 +1,8 @@
 FROM alpine:latest
 ADD . /Note/
 WORKDIR /Note/
-RUN chmod +x /Note/
+RUN chmod +x note.exe
 ENV DirNumber 0
 ENV PORT 8443
 EXPOSE $PORT
-ENTRYPOINT [ "/Note/note", "-P", "$DirNumber" ]
+ENTRYPOINT [ "note.exe", "-P", "$DirNumber" ]
